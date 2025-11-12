@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Star, Users } from 'lucide-react';
+import { Star, Users } from "lucide-react";
 
 /**
  * Course Card Component
@@ -28,7 +28,7 @@ export default function CourseCard({ course }: CourseCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
       {/* Course Image */}
-      <div className="h-48 bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center">
+      <div className="h-48 bg-gradient-to-r from-green-400 to-yellow-500 flex items-center justify-center">
         <div className="text-white text-4xl font-bold">
           {course.title.charAt(0)}
         </div>
@@ -63,7 +63,7 @@ export default function CourseCard({ course }: CourseCardProps) {
           <span className="text-2xl font-bold text-blue-600">
             ${course.price}
           </span>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+          <button className="px-4 py-2 bg-yellow-600 text-black rounded-lg hover:bg-blue-700 transition font-medium">
             Enroll Now
           </button>
         </div>
